@@ -67,7 +67,7 @@ const Blog = () => {
             Latest Immigration Insights
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Stay informed with our latest articles, guides, and immigration news
+          Mantente informado con nuestros últimos artículos, guías y noticias sobre inmigración
           </p>
         </motion.div>
 

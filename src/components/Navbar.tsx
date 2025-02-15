@@ -5,7 +5,6 @@ import { useState, useEffect } from 'react';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [height, setHeight] = useState(64);
   
   const easing = [0.6, -0.05, 0.01, 0.99];
 
@@ -13,7 +12,6 @@ const Navbar = () => {
     const handleScroll = () => {
       const isScrolled = window.scrollY > 100;
       setScrolled(isScrolled);
-      setHeight(isScrolled ? 52 : 64);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -21,11 +19,11 @@ const Navbar = () => {
   }, []);
 
   const menuItems = [
-    { name: 'Home', href: '#' },
-    { name: 'Services', href: '#services' },
-    { name: 'About', href: '#about' },
+    { name: 'Inicio', href: '#' },
+    { name: 'Servicios', href: '#services' },
+    { name: 'Nosotros', href: '#about' },
     { name: 'Blog', href: '#blog' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Contactenos', href: '#contact' },
   ];
 
   return (
@@ -34,12 +32,11 @@ const Navbar = () => {
         animate={{
           backgroundColor: scrolled ? 'rgba(255, 255, 255, 0.95)' : 'rgba(255, 255, 255, 0.1)',
           borderColor: scrolled ? 'rgba(226, 232, 240, 1)' : 'rgba(255, 255, 255, 0.1)',
-          height
         }}
         transition={{ duration: 0.3, ease: easing }}
         className="fixed w-full z-50 backdrop-blur-lg border-b"
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 py-4 sm:px-6 lg:px-8 ">
           <div className="flex items-center justify-between h-full">
             <div className="flex-shrink-0">
               <motion.a
@@ -51,7 +48,7 @@ const Navbar = () => {
                 transition={{ duration: 0.2, ease: easing }}
               >
                 <Globe2 className="h-8 w-8 text-yellow-400" />
-                <span>PDM Immigration</span>
+                <span>PDM Immigration Services</span>
               </motion.a>
             </div>
 
@@ -72,14 +69,7 @@ const Navbar = () => {
                     {item.name}
                   </motion.a>
                 ))}
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  transition={{ duration: 0.2, ease: easing }}
-                  className="px-4 py-2 bg-yellow-400 text-blue-900 font-semibold rounded-lg"
-                >
-                  Client Portal
-                </motion.button>
+                
               </div>
             </div>
 

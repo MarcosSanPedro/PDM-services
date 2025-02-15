@@ -58,7 +58,7 @@ const Contact = () => {
                   <Phone className="w-6 h-6 text-blue-600 mt-1" />
                   <div>
                     <div className="font-semibold text-gray-900">Phone</div>
-                    <a href="tel:+1234567890" className="text-blue-600 hover:text-blue-700">
+                    <a href="tel:+13059264581" className="text-blue-600 hover:text-blue-700">
                       +1 (234) 567-890
                     </a>
                   </div>
@@ -90,7 +90,7 @@ const Contact = () => {
                   <motion.a
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
-                    href="https://wa.me/1234567890"
+                    href="https://wa.me/13059264581"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-green-500 text-white p-3 rounded-full hover:bg-green-600 transition-colors"

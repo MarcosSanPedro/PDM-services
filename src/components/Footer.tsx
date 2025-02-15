@@ -65,7 +65,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-yellow-400" />
-                <a href="tel:+1234567890" className="text-blue-100 hover:text-yellow-400 transition-colors">
+                <a href="tel:+13059264581" className="text-blue-100 hover:text-yellow-400 transition-colors">
                   +1 (234) 567-890
                 </a>
               </div>
@@ -147,7 +147,7 @@ const Footer = () => {
             <div className="lg:text-right">
               <h4 className="text-lg font-semibold mb-4">Need Immediate Help?</h4>
               <motion.a
-                href="https://wa.me/1234567890"
+                href="https://wa.me/13059264581"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}

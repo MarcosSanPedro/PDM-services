@@ -5,45 +5,45 @@ import { useInView } from 'react-intersection-observer';
 const services = [
   {
     icon: Users,
-    title: 'Family Petitions',
-    description: 'Reunite with your loved ones through our comprehensive family immigration services.',
+    title: 'Reclamación Familiar',
+    description: 'Reúnete con tus seres queridos a través de nuestros completos servicios de inmigración familiar.',
     image: 'https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80',
-    whatsappMessage: 'Hello! I would like to inquire about Family Petition services.'
+    whatsappMessage: '¡Hola! Me gustaría hacer una consulta sobre los servicios de Petición Familiar.'
   },
   {
     icon: Scale,
-    title: 'Asylum Services',
-    description: 'Expert guidance and support throughout your asylum application process.',
+    title: 'Asilo Político',
+    description: 'Orientación experta y apoyo a lo largo de todo el proceso de solicitud de asilo.',
     image: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80',
-    whatsappMessage: 'Hi! I need information about Asylum services.'
+    whatsappMessage: '¡Hola! Necesito información sobre los servicios de Asilo.'
   },
   {
     icon: Landmark,
-    title: 'Citizenship',
-    description: 'Navigate the path to U.S. citizenship with our experienced team.',
+    title: 'Ciudadanía',
+    description: 'Navega el camino hacia la ciudadanía estadounidense con nuestro equipo experimentado.',
     image: 'https://images.unsplash.com/photo-1603827457577-609e6f42a45e?auto=format&fit=crop&q=80',
-    whatsappMessage: 'Hello! I would like to learn more about the Citizenship process.'
+    whatsappMessage: '¡Hola! Me gustaría aprender más sobre el proceso de Ciudadanía.'
   },
   {
     icon: Calculator,
-    title: 'Tax Services',
-    description: 'Professional tax preparation and planning for individuals and businesses.',
+    title: 'Servicios de Impuestos',
+    description: 'Preparación y planificación profesional de impuestos para individuos y empresas.',
     image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80',
-    whatsappMessage: 'Hi! I need assistance with Tax services.'
+    whatsappMessage: '¡Hola! Necesito ayuda con los servicios de impuestos.'
   },
   {
     icon: FileCheck2,
-    title: 'Notary Services',
-    description: 'Certified notary public services for all your documentation needs.',
+    title: 'Servicios notariales',
+    description: 'Servicios de notaría pública certificada para todas tus necesidades de documentación.',
     image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80',
-    whatsappMessage: 'Hello! I need Notary services.'
+    whatsappMessage: '¡Hola! Necesito servicios notariales.'
   },
   {
     icon: FileText,
-    title: 'Work Permits',
+    title: 'Permisos de Trabajo',
     description: 'Streamlined work authorization and employment visa processing.',
     image: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80',
-    whatsappMessage: 'Hi! I would like information about Work Permit processing.'
+    whatsappMessage: '¡Hola! Me gustaría obtener información sobre el procesamiento de permisos de trabajo.'
   }
 ];
 
@@ -65,7 +65,7 @@ const Services = () => {
             transition={{ duration: 0.6, ease: easing }}
             className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4"
           >
-            Comprehensive Immigration Solutions
+            Soluciones integrales
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -73,7 +73,7 @@ const Services = () => {
             transition={{ duration: 0.6, delay: 0.2, ease: easing }}
             className="text-xl text-gray-600 max-w-3xl mx-auto"
           >
-            Expert guidance through every step of your immigration journey
+            Orientación experta en cada paso de tu proceso de inmigración
           </motion.p>
         </div>
 
@@ -109,7 +109,7 @@ const Services = () => {
                 {/* WhatsApp Button with Floating Message */}
                 <div className="relative mt-6">
                   <motion.a
-                    href={`https://wa.me/1234567890?text=${encodeURIComponent(service.whatsappMessage)}`}
+                    href={`https://wa.me/13059264581?text=${encodeURIComponent(service.whatsappMessage)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="relative flex items-center justify-between w-full px-4 py-3 bg-white/10 backdrop-blur-sm rounded-lg group/button overflow-hidden"
@@ -134,7 +134,7 @@ const Services = () => {
                       }}
                     >
                       <MessageCircle className="w-5 h-5 mr-2" />
-                      Chat Now
+                     Escríbenos
                     </motion.span>
 
                     <motion.div

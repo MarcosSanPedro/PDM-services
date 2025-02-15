@@ -4,28 +4,28 @@ import { useState } from 'react';
 
 const faqs = [
   {
-    question: "What immigration services do you offer?",
-    answer: "We offer a comprehensive range of immigration services including family petitions, work permits, asylum applications, citizenship services, and permanent residency assistance. Our team provides personalized guidance throughout your immigration journey."
+    question: "¿Qué servicios de inmigración ofreces?",
+    answer: "Ofrecemos una amplia gama de servicios de inmigración, que incluyen peticiones familiares, permisos de trabajo, solicitudes de asilo, servicios de ciudadanía y asistencia para la residencia permanente. Nuestro equipo brinda orientación personalizada a lo largo de tu proceso de inmigración."
   },
   {
-    question: "How long does the immigration process typically take?",
-    answer: "The timeline varies depending on the type of immigration service and current processing times. During your consultation, we'll provide a detailed timeline based on your specific case and keep you updated throughout the process."
+    question: "¿Cuánto tiempo suele durar el proceso de inmigración?",
+    answer: "El tiempo de procesamiento varía según el tipo de servicio de inmigración y los tiempos de procesamiento actuales. Durante tu consulta, te proporcionaremos un cronograma detallado basado en tu caso específico y te mantendremos actualizado a lo largo del proceso."
   },
   {
-    question: "What documents do I need for my immigration application?",
-    answer: "Required documents vary by case type. Generally, you'll need identification documents, proof of relationships for family-based petitions, financial records, and supporting evidence. We'll provide a detailed checklist during your consultation."
+    question: "¿Qué documentos necesito para mi solicitud de inmigración?",
+    answer: "Los documentos requeridos varían según el tipo de caso. En general, necesitarás documentos de identificación, prueba de relaciones para peticiones familiares, registros financieros y evidencia de apoyo. Te proporcionaremos una lista detallada de verificación durante tu consulta."
   },
   {
-    question: "Do you offer tax services for immigrants?",
-    answer: "Yes, we provide specialized tax services for immigrants, including individual and business tax preparation, tax planning, and compliance assistance. Our tax specialists understand the unique needs of immigrant taxpayers."
+    question: "¿Ofrecen servicios de impuestos para inmigrantes?",
+    answer: "Sí, ofrecemos servicios de impuestos especializados para inmigrantes, incluyendo preparación de impuestos para individuos y empresas, planificación fiscal y asistencia en cumplimiento. Nuestros especialistas en impuestos comprenden las necesidades únicas de los contribuyentes inmigrantes."
   },
   {
-    question: "What are your notary service fees?",
-    answer: "Our notary service fees vary depending on the type and number of documents. We offer competitive rates and can provide a detailed fee schedule during your consultation. Special packages are available for immigration-related notarizations."
+    question: "¿Cuáles son las tarifas de sus servicios notariales?",
+    answer: "Nuestras tarifas de servicios notariales varían según el tipo y la cantidad de documentos. Ofrecemos tarifas competitivas y podemos proporcionar un desglose detallado de tarifas durante tu consulta. Disponemos de paquetes especiales para notarizaciones relacionadas con la inmigración."
   },
   {
-    question: "How can I schedule a consultation?",
-    answer: "You can schedule a consultation through our website, by calling our office, or via WhatsApp. We offer both in-person and virtual consultations to accommodate your schedule and preferences."
+    question: "¿Cómo puedo programar una consulta?",
+    answer: "Puedes programar una consulta a través de nuestro sitio web, llamando a nuestra oficina o por WhatsApp. Ofrecemos consultas tanto presenciales como virtuales para adaptarnos a tu horario y preferencias."
   }
 ];
 
@@ -42,10 +42,10 @@ const FAQ = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-            Frequently Asked Questions
+          Preguntas frecuentes
           </h2>
           <p className="text-xl text-gray-600">
-            Find answers to common questions about our services
+          Encuentra respuestas a preguntas frecuentes sobre nuestros servicios
           </p>
         </motion.div>
 
@@ -102,7 +102,7 @@ const FAQ = () => {
           className="mt-12 text-center"
         >
           <p className="text-gray-600 mb-4">
-            Still have questions? We're here to help!
+          ¿Aún tienes preguntas? ¡Estamos aquí para ayudarte!
           </p>
           <motion.a
             whileHover={{ scale: 1.05 }}
@@ -110,7 +110,7 @@ const FAQ = () => {
             href="#contact"
             className="inline-flex items-center space-x-2 bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
           >
-            <span>Contact Us</span>
+            <span>Contáctanos</span>
           </motion.a>
         </motion.div>
       </div>

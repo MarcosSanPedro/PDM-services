@@ -1,4 +1,4 @@
-import { motion, useScroll, useTransform } from 'motion/react';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import { Scale, Users, FileCheck } from 'lucide-react';
 import { useCallback } from 'react';
 import Particles from "react-tsparticles";
@@ -7,9 +7,8 @@ import type { Container, Engine } from "tsparticles-engine";
 
 const Hero = () => {
   const { scrollY } = useScroll();
-  const y = useTransform(scrollY, [0, 500], [0, 150]);
-  const opacity = useTransform(scrollY, [0, 200], [1, 0]);
-  const scale = useTransform(scrollY, [0, 300], [1, 0.8]);
+  const y = useTransform(scrollY, [0, 500], [0, 50]);
+  const scale = useTransform(scrollY, [0, 500], [1, 0.95]);
   const easing = [0.6, -0.05, 0.01, 0.99];
 
   const particlesInit = useCallback(async (engine: Engine) => {
@@ -21,7 +20,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="relative min-h-[100dvh] bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 text-white overflow-hidden">
+    <div className="relative pt-14 min-h-screen bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 text-white">
       {/* Particles Background */}
       <Particles
         id="tsparticles"
@@ -30,7 +29,7 @@ const Hero = () => {
         options={{
           particles: {
             number: {
-              value: 100,
+              value: 80,
               density: {
                 enable: true,
                 value_area: 800
@@ -43,7 +42,7 @@ const Hero = () => {
               type: "circle"
             },
             opacity: {
-              value: 0.2,
+              value: 0.3,
               random: true,
               animation: {
                 enable: true,
@@ -62,14 +61,21 @@ const Hero = () => {
                 sync: false
               }
             },
+            links: {
+              enable: true,
+              distance: 150,
+              color: "#ffffff",
+              opacity: 0.2,
+              width: 1
+            },
             move: {
               enable: true,
-              speed: 0.5,
+              speed: 1,
               direction: "none",
               random: false,
               straight: false,
               outModes: {
-                default: "out"
+                default: "bounce"
               },
               attract: {
                 enable: false,
@@ -79,7 +85,7 @@ const Hero = () => {
             }
           },
           interactivity: {
-            detectsOn: "canvas",
+            detectsOn: "window",
             events: {
               onHover: {
                 enable: true,
@@ -99,89 +105,90 @@ const Hero = () => {
           background: {
             opacity: 0
           },
-          retina_detect: true
+          retina_detect: true,
+          fullScreen: {
+            enable: false,
+            zIndex: 0
+          }
         }}
-        className="absolute inset-0 pointer-events-none"
+        className="absolute inset-0"
       />
 
       {/* Content */}
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 sm:pt-24 sm:pb-20">
+      <motion.div
+        className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20"
+        style={{ scale, y }}
+      >
         <motion.div
-          style={{ scale, y }}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: easing }}
-          className="text-center mt-16 sm:mt-20"
+          className="text-center"
         >
-          <motion.h1 
-            className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-8"
+          <motion.h1
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-4 sm:mb-8"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: easing }}
           >
-            Your Journey to America
-            <motion.span 
-              className="block text-yellow-400"
+            Tu viaje en Estados Unidos
+            <motion.span
+              className="block text-yellow-400 mt-2"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4, ease: easing }}
             >
-              Starts Here
+              Comienza aqui
             </motion.span>
           </motion.h1>
-          <motion.p 
-            className="max-w-2xl mx-auto text-xl text-blue-100 mb-12"
+          <motion.p
+            className="max-w-2xl mx-auto text-lg sm:text-xl text-blue-100 mb-8 sm:mb-12"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.6, ease: easing }}
           >
-            Professional immigration services, tax preparation, and notary solutions tailored to your needs.
+            Servicios profesionales de inmigración, preparación de impuestos y soluciones notariales adaptadas a tus necesidades.
           </motion.p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row justify-center gap-4 mb-16">
+          <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12 sm:mb-16">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.8, ease: easing }}
-              className="px-8 py-4 bg-yellow-400 text-blue-900 font-semibold rounded-lg shadow-lg hover:bg-yellow-300 transition-colors"
+              className="px-6 sm:px-8 py-3 sm:py-4 bg-yellow-400 text-blue-900 font-semibold rounded-lg shadow-lg hover:bg-yellow-300 transition-colors"
             >
-              Free Consultation
+              Consulta Gratis
             </motion.button>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: 0.8, ease: easing }}
-              className="px-8 py-4 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-colors"
+            <a
+              href='#services'
+              className="px-6 sm:px-8 py-3 sm:py-4 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-colors"
             >
-              Our Services
-            </motion.button>
+              Nuestros Servicios
+            </a>
           </div>
 
           {/* Feature Cards */}
-          <motion.div 
-            className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto"
-            style={{ opacity }}
+          <motion.div
+            className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 max-w-5xl mx-auto"
           >
             {[
               {
                 icon: Scale,
-                title: "Legal Expertise",
-                description: "Professional guidance through every step of your immigration journey"
+                title: "Experiencia legal",
+                description: "Orientación profesional en cada paso de tu proceso de inmigración"
               },
               {
                 icon: Users,
-                title: "Family First",
-                description: "Specialized in family reunification and immigration services"
+                title: "La Familia Primero",
+                description: "Especializados en reunificación familiar y servicios de inmigración"
               },
               {
                 icon: FileCheck,
-                title: "Complete Solutions",
-                description: "Immigration, tax, and notary services under one roof"
+                title: "Soluciones Completas",
+                description: "Servicios de inmigración, impuestos y notaría en un solo lugar"
               }
             ].map((feature, index) => (
               <motion.div
@@ -190,28 +197,28 @@ const Hero = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 1 + (0.2 * index), ease: easing }}
                 whileHover={{ y: -5, transition: { duration: 0.2 } }}
-                className="bg-white/10 backdrop-blur-lg rounded-xl p-6 text-center transform-gpu hover:shadow-2xl transition-all duration-300"
+                className="bg-white/10 backdrop-blur-lg rounded-xl p-4 sm:p-6 text-center transform-gpu hover:shadow-2xl transition-all duration-300"
               >
-                <feature.icon className="w-12 h-12 mx-auto mb-4 text-yellow-400" />
-                <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-                <p className="text-blue-100">{feature.description}</p>
+                <feature.icon className="w-8 h-8 sm:w-12 sm:h-12 mx-auto mb-3 sm:mb-4 text-yellow-400" />
+                <h3 className="text-lg sm:text-xl font-semibold mb-2">{feature.title}</h3>
+                <p className="text-sm sm:text-base text-blue-100">{feature.description}</p>
               </motion.div>
             ))}
           </motion.div>
         </motion.div>
-      </div>
+      </motion.div>
 
       {/* Floating WhatsApp Button */}
       <motion.a
-        href="https://wa.me/1234567890"
+        href="https://wa.me/13059264581"
         target="_blank"
         rel="noopener noreferrer"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
-        className="fixed bottom-8 right-8 bg-green-500 text-white p-4 rounded-full shadow-lg z-50 cursor-pointer"
+        className="fixed bottom-4 sm:bottom-8 right-4 sm:right-8 bg-green-500 text-white p-3 sm:p-4 rounded-full shadow-lg z-50 cursor-pointer hover:bg-green-600 transition-colors"
       >
         <svg
-          className="w-6 h-6"
+          className="w-5 h-5 sm:w-6 sm:h-6"
           fill="currentColor"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"

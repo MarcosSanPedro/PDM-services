@@ -4,28 +4,28 @@ import { Star, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const testimonials = [
   {
-    name: "Katherine Ulloa Silva",
-    content: "Hey everyone, I just received my SSN and working permit. I am so thankful to God and PDM for guiding me through this process, it's been 6 months and everything is working out. We just have to be patient and have a good lawyer like German. I definitely recommend PDM for you.",
+    name: "Ivania Castellon",
+    content: "Super recommended they helped me write my asylum!! And thank God and them I got my asylum.. cheer up my people if you can my people apply that PD IMMIGRATION SERVICE if it complies 😍",
     rating: 5
   },
   {
-    name: "Ivania Castellon",
-    content: "Super recommended they helped me write my asylum!! And thank God and them I got my asylum.. cheer up my people if you can my people apply that PD IMMIGRATION SERVICE if it complies 😍",
+    name: "Katherine Ulloa Silva",
+    content: "Súper recomendado ,por su eficiencia y dedicación y disponibilidad en todo momento cuando tengo una pregunta",
     rating: 5
   },
   {
     name: "Kefren Loasiga",
-    content: "Excelente servicio, muy amable, gracias x ayudarme a tramitar mis documentos 🇳🇮 🇺🇲 💯 % recomendado.",
+    content: "Excelente servicio, muy amable, gracias x ayudarme a tramitar mis documentos 🇳🇮 🇺🇲 💯 % recomendado.",
     rating: 5
   },
   {
     name: "Jose Pereira",
-    content: "Excelente servicio, lo recomiendo una persona responsable, amable y legal, los nicaragüenses tenemos que apoyarnos entre nosotros.",
+    content: "Excelente servicio, lo recomiendo una persona responsable, amable y legal, los nicaragüenses tenemos que apoyarnos entre nosotros.",
     rating: 5
   },
   {
-    name: "Sujeilyng Palma",
-    content: "Un excelente servicio, rápido, eficacia, el es una gran persona, humilde, respetuoso, responsable. Totalmente recomendado para hacer sus trámites migratorios ❤ Germán zeledon",
+    name: "Sujeilyng",
+    content: "Un excelente servicio, rápido, eficacia, el es una gran persona, humilde, respetuoso, responsable. Totalmente recomendado para hacer sus trámites migratorios ❤ Germán zeledon",
     rating: 5
   },
 ];
@@ -76,8 +76,8 @@ function App() {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 overflow-hidden">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id='testimonials' className="py-20 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -94,26 +94,6 @@ function App() {
         </motion.div>
 
         <div className="relative">
-          {/* Navigation Arrows - Fixed positioning */}
-          <div className="absolute inset-0 flex items-center justify-between z-20 px-4">
-            <motion.button
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              onClick={prev}
-              className="p-3 rounded-full bg-white shadow-lg text-blue-900 hover:bg-blue-50 transition-all duration-200 transform hover:-translate-x-1"
-            >
-              <ChevronLeft className="w-8 h-8" />
-            </motion.button>
-            <motion.button
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              onClick={next}
-              className="p-3 rounded-full bg-white shadow-lg text-blue-900 hover:bg-blue-50 transition-all duration-200 transform hover:translate-x-1"
-            >
-              <ChevronRight className="w-8 h-8" />
-            </motion.button>
-          </div>
-
           <div className="overflow-hidden">
             <div className="relative h-[400px]">
               <AnimatePresence initial={false} custom={direction}>
@@ -130,8 +110,28 @@ function App() {
                   }}
                   className="absolute w-full"
                 >
-                  <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-2xl shadow-xl p-8 md:p-12 backdrop-blur-sm">
-                    <div className="flex flex-col items-center text-center">
+                  <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-2xl shadow-xl p-8 md:p-12 backdrop-blur-sm relative">
+                    {/* Navigation Arrows - Inside the white box */}
+                    <div className="absolute inset-y-0 left-0 right-0 flex items-center justify-between px-4 pointer-events-none">
+                      <motion.button
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
+                        onClick={prev}
+                        className="p-2 rounded-full bg-white/80 shadow-lg text-blue-900 hover:bg-blue-50 transition-all pointer-events-auto"
+                      >
+                        <ChevronLeft className="w-6 h-6" />
+                      </motion.button>
+                      <motion.button
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
+                        onClick={next}
+                        className="p-2 rounded-full bg-white/80 shadow-lg text-blue-900 hover:bg-blue-50 transition-all pointer-events-auto"
+                      >
+                        <ChevronRight className="w-6 h-6" />
+                      </motion.button>
+                    </div>
+
+                    <div className="flex flex-col items-center text-center px-8">
                       <motion.div 
                         initial={{ scale: 0 }}
                         animate={{ scale: 1 }}

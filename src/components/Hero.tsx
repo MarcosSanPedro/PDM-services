@@ -152,16 +152,12 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12 sm:mb-16">
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: 0.8, ease: easing }}
+            <a
+            href='tel:+1(305) 926-4581'
               className="px-6 sm:px-8 py-3 sm:py-4 bg-yellow-400 text-blue-900 font-semibold rounded-lg shadow-lg hover:bg-yellow-300 transition-colors"
             >
               Consulta Gratis
-            </motion.button>
+            </a>
             <a
               href='#services'
               className="px-6 sm:px-8 py-3 sm:py-4 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-colors"

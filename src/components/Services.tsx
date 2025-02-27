@@ -7,42 +7,42 @@ const services = [
     icon: Users,
     title: 'Reclamación Familiar',
     description: 'Reúnete con tus seres queridos a través de nuestros completos servicios de inmigración familiar.',
-    image: 'https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80',
+    image: 'images/6.jpg',
     whatsappMessage: '¡Hola! Me gustaría hacer una consulta sobre los servicios de Petición Familiar.'
   },
   {
     icon: Scale,
     title: 'Asilo Político',
     description: 'Orientación experta y apoyo a lo largo de todo el proceso de solicitud de asilo.',
-    image: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80',
+    image: 'images/3.jpg',
     whatsappMessage: '¡Hola! Necesito información sobre los servicios de Asilo.'
   },
   {
     icon: Landmark,
     title: 'Ciudadanía',
     description: 'Navega el camino hacia la ciudadanía estadounidense con nuestro equipo experimentado.',
-    image: 'https://images.unsplash.com/photo-1603827457577-609e6f42a45e?auto=format&fit=crop&q=80',
+    image: 'images/2.jpg',
     whatsappMessage: '¡Hola! Me gustaría aprender más sobre el proceso de Ciudadanía.'
   },
   {
     icon: Calculator,
     title: 'Servicios de Impuestos',
     description: 'Preparación y planificación profesional de impuestos para individuos y empresas.',
-    image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80',
+    image: 'images/7.jpg',
     whatsappMessage: '¡Hola! Necesito ayuda con los servicios de impuestos.'
   },
   {
     icon: FileCheck2,
     title: 'Servicios notariales',
     description: 'Servicios de notaría pública certificada para todas tus necesidades de documentación.',
-    image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80',
+    image: 'images/4.jpg',
     whatsappMessage: '¡Hola! Necesito servicios notariales.'
   },
   {
     icon: FileText,
     title: 'Permisos de Trabajo',
-    description: 'Streamlined work authorization and employment visa processing.',
-    image: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80',
+    description: 'Procesamiento simplificado de autorizaciones de trabajo y visas de empleo.',
+    image: 'images/1.jpg',
     whatsappMessage: '¡Hola! Me gustaría obtener información sobre el procesamiento de permisos de trabajo.'
   }
 ];

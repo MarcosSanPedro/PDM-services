@@ -1,29 +1,42 @@
-import { motion, AnimatePresence } from 'motion/react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Globe2, ChevronRight } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [visible, setVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
   
   const easing = [0.6, -0.05, 0.01, 0.99];
 
   useEffect(() => {
     const handleScroll = () => {
-      const isScrolled = window.scrollY > 100;
+      const currentScrollY = window.scrollY;
+      const isScrolled = currentScrollY > 100;
+      
+      // Determine if we should show or hide the navbar
+      if (currentScrollY < lastScrollY) {
+        // Scrolling up
+        setVisible(true);
+      } else if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        // Scrolling down and not at the top
+        setVisible(false);
+      }
+      
       setScrolled(isScrolled);
+      setLastScrollY(currentScrollY);
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [lastScrollY]);
 
   const menuItems = [
     { name: 'Inicio', href: '#' },
     { name: 'Servicios', href: '#services' },
     { name: 'Nosotros', href: '#about' },
     { name: 'Blog', href: '#blog' },
-    { name: 'Contactenos', href: '#contact' },
   ];
 
   return (
@@ -32,6 +45,7 @@ const Navbar = () => {
         animate={{
           backgroundColor: scrolled ? 'rgba(255, 255, 255, 0.95)' : 'rgba(255, 255, 255, 0.1)',
           borderColor: scrolled ? 'rgba(226, 232, 240, 1)' : 'rgba(255, 255, 255, 0.1)',
+          y: visible ? 0 : -100,
         }}
         transition={{ duration: 0.3, ease: easing }}
         className="fixed w-full z-50 backdrop-blur-lg border-b"
@@ -47,7 +61,7 @@ const Navbar = () => {
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.2, ease: easing }}
               >
-                <Globe2 className="h-8 w-8 text-yellow-400" />
+                <img src='images/logo.svg' className="h-14 w-14 " />
                 <span>PDM Immigration Services</span>
               </motion.a>
             </div>
@@ -119,7 +133,7 @@ const Navbar = () => {
                     transition={{ delay: 0.1 }}
                     className="flex items-center space-x-2"
                   >
-                    <Globe2 className="h-6 w-6 text-yellow-400" />
+                    <img src='images/logo.svg' className="h-14 w-14 " />
                     <span className="font-bold text-gray-900">PDM Immigration</span>
                   </motion.div>
                   <motion.button
@@ -148,19 +162,6 @@ const Navbar = () => {
                     </motion.a>
                   ))}
                 </div>
-
-                {/* Footer */}
-                <div className="p-4 border-t">
-                  <motion.button
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.3 }}
-                    className="w-full px-4 py-3 bg-yellow-400 text-blue-900 font-semibold rounded-lg hover:bg-yellow-500 transition-colors"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    Client Portal
-                  </motion.button>
-                </div>
               </div>
             </motion.div>
           </>
@@ -170,4 +171,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navbar;  

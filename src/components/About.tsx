@@ -77,13 +77,13 @@ const About = () => {
           >
             <div className="relative rounded-2xl overflow-hidden aspect-[4/3]">
               <img
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80"
+                src="images/PDM.jpg"
                 alt="Immigration Specialist"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 to-transparent" />
             </div>
-    
+
           </motion.div>
 
           {/* Text Content */}
@@ -94,26 +94,25 @@ const About = () => {
             className="space-y-6"
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
-            Somos más que un servicio de inmigración
+              Somos más que un servicio de inmigración
             </h2>
             <p className="text-xl text-gray-600">
-            Entendemos que el proceso de inmigración puede ser abrumador y costoso. Por eso, nos enorgullece ofrecer tarifas accesibles, asegurando que tus traducciones y servicios no cuesten más de lo necesario.
+              Entendemos que el proceso de inmigración puede ser abrumador y costoso. Por eso, nos enorgullece ofrecer tarifas accesibles, asegurando que tus traducciones y servicios no cuesten más de lo necesario.
             </p>
             <p className="text-lg text-gray-600">
-            Con más de 7 años de experiencia en leyes de inmigración y casos relacionados, siempre hemos brindado a nuestros clientes un servicio de la más alta calidad. Ofrecemos opciones de respuesta rápida porque entendemos que, en estos casos, el tiempo es dinero.
+              Con más de 7 años de experiencia en leyes de inmigración y casos relacionados, siempre hemos brindado a nuestros clientes un servicio de la más alta calidad. Ofrecemos opciones de respuesta rápida porque entendemos que, en estos casos, el tiempo es dinero.
             </p>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+            <a
+              href='tel:+1(305) 926-4581'
               className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
             >
               Hacer una Consulta
-            </motion.button>
+            </a>
           </motion.div>
         </div>
 
         {/* Values Section */}
-        <div ref={valuesRef} className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+        <div id='nosotros' ref={valuesRef} className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
           {values.map((value, index) => (
             <motion.div
               key={index}

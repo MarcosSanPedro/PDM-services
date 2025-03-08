@@ -46,7 +46,7 @@ const Footer = () => {
               className="flex items-center space-x-2 mb-6"
             >
               <img src='images/logo.svg' className="h-14 w-14 " />
-              <span className="text-2xl font-bold">PDM Immigration Services</span>
+              <span className="text-2xl font-bold">PDM Immigration SERVICES</span>
             </a>
             <p className="text-blue-100 mb-6">
             Servicios profesionales de inmigración, preparación de impuestos y soluciones notariales adaptadas a tus necesidades.
@@ -55,8 +55,8 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-yellow-400 mt-1" />
                 <div>
-                  <p className="text-blue-100">9040 Collins Ave</p>
-                  <p className="text-blue-100"> Surfside, FL 33154</p>
+                  <p className="text-blue-100">14709 NE 7th Ave</p>
+                  <p className="text-blue-100"> North Miami, Fl 33161</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
@@ -122,7 +122,7 @@ const Footer = () => {
               <div className="space-y-2">
                 <div className="flex justify-between">
                   <span className="text-blue-100">Lunes - Viernes</span>
-                  <span>9:00 AM - 6:00 PM</span>
+                  <span>9:00 AM - 5:00 PM</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-blue-100">Sábado</span>
@@ -164,7 +164,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-blue-100 text-sm">
-              © {currentYear} PDM Immigration Services. Todos los derechos reservados.
+              © {currentYear} PDM IMMIGRATION SERVICES. Todos los derechos reservados.
             </p>
             <div className="flex space-x-6 text-sm">
               <a href="https://mmbytesolutions.com/" className="text-blue-100 hover:text-yellow-400 transition-colors">

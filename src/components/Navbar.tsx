@@ -62,7 +62,7 @@ const Navbar = () => {
                 transition={{ duration: 0.2, ease: easing }}
               >
                 <img src='images/logo.svg' className="h-14 w-14 " />
-                <span>PDM Immigration Services</span>
+                <span>PDM IMMIGRATION SERVICES</span>
               </motion.a>
             </div>
 
@@ -134,7 +134,7 @@ const Navbar = () => {
                     className="flex items-center space-x-2"
                   >
                     <img src='images/logo.svg' className="h-14 w-14 " />
-                    <span className="font-bold text-gray-900">PDM Immigration</span>
+                    <span className="font-bold text-gray-900">PDM IMMIGRATION</span>
                   </motion.div>
                   <motion.button
                     whileTap={{ scale: 0.95 }}

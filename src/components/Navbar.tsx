@@ -61,7 +61,7 @@ const Navbar = () => {
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.2, ease: easing }}
               >
-                <img src='images/logo.svg' className="h-14 w-14 " />
+                <img src='images/logo1.png' className="h-14 w-14 " />
                 <span>PDM IMMIGRATION SERVICES</span>
               </motion.a>
             </div>
@@ -133,7 +133,7 @@ const Navbar = () => {
                     transition={{ delay: 0.1 }}
                     className="flex items-center space-x-2"
                   >
-                    <img src='images/logo.svg' className="h-14 w-14 " />
+                    <img src='images/logo1.png' className="h-14 w-14 " />
                     <span className="font-bold text-gray-900">PDM IMMIGRATION</span>
                   </motion.div>
                   <motion.button

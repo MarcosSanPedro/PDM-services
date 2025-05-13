@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Globe2, Facebook } from 'lucide-react';
+import { MapPin, Phone, Mail, Facebook } from 'lucide-react';
 import TikTokIcon from './icons/TikTokIcon';
 
 const Footer = () => {
@@ -45,8 +45,8 @@ const Footer = () => {
               href="#"
               className="flex items-center space-x-2 mb-6"
             >
-              <img src='images/logo.svg' className="h-14 w-14 " />
-              <span className="text-2xl font-bold">PDM Immigration SERVICES</span>
+              <img src='images/logo1.png' className="h-14 w-14 " />
+              <span className="text-2xl font-bold">PDM IMMIGRATION SERVICES</span>
             </a>
             <p className="text-blue-100 mb-6">
             Servicios profesionales de inmigración, preparación de impuestos y soluciones notariales adaptadas a tus necesidades.

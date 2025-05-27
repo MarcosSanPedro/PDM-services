@@ -13,7 +13,7 @@ const services = [
   {
     icon: Scale,
     title: 'Asilo Político',
-    description: 'Orientación experta y apoyo a lo largo de todo el proceso de solicitud de asilo.',
+    description: 'Apoyo en el correcto llenado de la solicitud de asilo político.',
     image: 'images/3.jpg',
     whatsappMessage: '¡Hola! Necesito información sobre los servicios de Asilo.'
   },

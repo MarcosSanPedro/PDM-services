@@ -49,7 +49,7 @@ const Footer = () => {
               <span className="text-2xl font-bold">PDM IMMIGRATION SERVICES</span>
             </a>
             <p className="text-blue-100 mb-6">
-            Servicios profesionales de inmigración, preparación de impuestos y soluciones notariales adaptadas a tus necesidades.
+            Servicios de inmigración, preparación de impuestos y soluciones notariales adaptadas a tus necesidades.
             </p>
             <div className="space-y-4">
               <div className="flex items-start space-x-3">

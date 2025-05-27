@@ -100,7 +100,7 @@ const About = () => {
               Entendemos que el proceso de inmigración puede ser abrumador y costoso. Por eso, nos enorgullece ofrecer tarifas accesibles, asegurando que tus traducciones y servicios no cuesten más de lo necesario.
             </p>
             <p className="text-lg text-gray-600">
-              Con más de 7 años de experiencia en leyes de inmigración y casos relacionados, siempre hemos brindado a nuestros clientes un servicio de la más alta calidad. Ofrecemos opciones de respuesta rápida porque entendemos que, en estos casos, el tiempo es dinero.
+              Con amplios conocimientos de la ley de inmigración y experiencia en el llenado de aplicaciones de inmigración para la comunidad inmigrante, brindando un servicio de calidad, dando respuestas rápidas porque entendemos que en estos casos, el tiempo es dinero.
             </p>
             <a
               href='tel:+1(305) 926-4581'

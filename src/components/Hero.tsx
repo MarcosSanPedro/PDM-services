@@ -147,7 +147,7 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.6, ease: easing }}
           >
-            Servicios profesionales de inmigración, preparación de impuestos y soluciones notariales adaptadas a tus necesidades.
+            Servicios de inmigración, preparación de impuestos y soluciones notariales adaptadas a tus necesidades.
           </motion.p>
 
           {/* CTA Buttons */}

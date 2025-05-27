@@ -20,8 +20,8 @@ const faqs = [
     answer: "Sí, ofrecemos servicios de impuestos especializados para inmigrantes, incluyendo preparación de impuestos para individuos y empresas, planificación fiscal y asistencia en cumplimiento. Nuestros especialistas en impuestos comprenden las necesidades únicas de los contribuyentes inmigrantes."
   },
   {
-    question: "¿Cuáles son las tarifas de sus servicios notariales?",
-    answer: "Nuestras tarifas de servicios notariales varían según el tipo y la cantidad de documentos. Ofrecemos tarifas competitivas y podemos proporcionar un desglose detallado de tarifas durante tu consulta. Disponemos de paquetes especiales para notarizaciones relacionadas con la inmigración."
+    question: "¿Cuáles son las tarifas de sus Notary Public Services?",
+    answer: "Nuestras tarifas de Notary Public Services varían según el tipo y la cantidad de documentos. Ofrecemos tarifas competitivas y podemos proporcionar un desglose detallado de tarifas durante tu consulta. Disponemos de paquetes especiales para notarizaciones relacionadas con la inmigración."
   },
   {
     question: "¿Cómo puedo programar una consulta?",

@@ -10,7 +10,7 @@ const Footer = () => {
       links: [
         { name: "Servicios de inmigración", href: "#services" },
         { name: "Preparación de impuestos", href: "#services" },
-        { name: "Servicios notariales", href: "#services" },
+        { name: "Notary Public Services", href: "#services" },
         { name: "Peticiones familiares", href: "#services" },
         { name: "Permisos de trabajo", href: "#services" },
         { name: "Ciudadanía", href: "#services" }

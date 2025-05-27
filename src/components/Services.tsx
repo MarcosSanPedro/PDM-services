@@ -33,10 +33,10 @@ const services = [
   },
   {
     icon: FileCheck2,
-    title: 'Servicios notariales',
+    title: 'Notary Public Services',
     description: 'Servicios de notaría pública certificada para todas tus necesidades de documentación.',
     image: 'images/4.jpg',
-    whatsappMessage: '¡Hola! Necesito servicios notariales.'
+    whatsappMessage: '¡Hola! Necesito Notary Public Services.'
   },
   {
     icon: FileText,

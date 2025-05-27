@@ -33,7 +33,7 @@ const About = () => {
     {
       icon: Shield,
       title: "Experiencia confiable",
-      description: "Más de 7 años de experiencia en leyes de inmigración, garantizando que tu caso sea manejado con precisión y cuidado."
+      description: "Más de 7 años de experiencia asistiendo a la comunidad inmigrante en el llenado de formularios."
     },
     {
       icon: BookOpen,
@@ -78,7 +78,7 @@ const About = () => {
             <div className="relative rounded-2xl overflow-hidden aspect-[4/3]">
               <img
                 src="images/PDM.jpg"
-                alt="Immigration Specialist"
+                alt="Asistencia a la comunidad inmigrante"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 to-transparent" />

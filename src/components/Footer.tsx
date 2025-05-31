@@ -56,7 +56,7 @@ const Footer = () => {
                 <MapPin className="w-5 h-5 text-yellow-400 mt-1" />
                 <div>
                   <p className="text-blue-100">14709 NE 7th Ave</p>
-                  <p className="text-blue-100"> North Miami, Fl 33161</p>
+                  <p className="text-blue-100"> North Miami, Fl 33161</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
@@ -154,6 +154,27 @@ const Footer = () => {
                 </svg>
                 <span>Escíbenos por WhatsApp</span>
               </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Legal Disclaimer */}
+      <div className="bg-blue-950/70 py-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col space-y-4">
+            <p className="text-yellow-400 font-semibold text-center text-sm md:text-base">LEGAL DISCLAIMER / AVISO LEGAL</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-8">
+              <div className="bg-blue-900/50 p-4 rounded-lg">
+                <p className="text-white text-xs md:text-sm font-medium text-center">
+                  I AM NOT AN ATTORNEY LICENSED TO PRACTICE LAW AND MAY NOT GIVE LEGAL ADVICE OR ACCEPT FEES FOR LEGAL ADVICE. I AM NOT ACCREDITED TO REPRESENT YOU IN IMMIGRATION MATTERS.
+                </p>
+              </div>
+              <div className="bg-blue-900/50 p-4 rounded-lg">
+                <p className="text-white text-xs md:text-sm font-medium text-center">
+                  NO SOY ABOGADO AUTORIZADO PARA EJERCER LA ABOGACÍA Y NO PUEDO PRESTAR ASESORAMIENTO JURÍDICO NI ACEPTAR HONORARIOS POR DICHO ASESORAMIENTO. NO ESTOY ACREDITADO PARA REPRESENTARLE EN ASUNTOS DE INMIGRACIÓN.
+                </p>
+              </div>
             </div>
           </div>
         </div>

@@ -1,11 +1,11 @@
 import { motion } from 'motion/react';
-import { FileText, Users, Scale, Landmark, Calculator, FileCheck2, MessageCircle } from 'lucide-react';
+import { FileText, Users, Scale, Landmark, Calculator, FileCheck2, MessageCircle, IdCard, HeartHandshake } from 'lucide-react';
 import { useInView } from 'react-intersection-observer';
 
 const services = [
   {
     icon: Users,
-    title: 'Reclamación Familiar',
+    title: 'Peticiones Familiares',
     description: 'Reúnete con tus seres queridos a través de nuestros completos servicios de inmigración familiar.',
     image: 'images/6.jpg',
     whatsappMessage: '¡Hola! Me gustaría hacer una consulta sobre los servicios de Petición Familiar.'
@@ -44,7 +44,22 @@ const services = [
     description: 'Procesamiento simplificado de autorizaciones de trabajo y visas de empleo.',
     image: 'images/1.jpg',
     whatsappMessage: '¡Hola! Me gustaría obtener información sobre el procesamiento de permisos de trabajo.'
-  }
+  },
+  {
+    icon: HeartHandshake,
+    title: 'Ajuste de Estatus',
+    description: 'Cambia tu estatus migratorio y avanza hacia la residencia legal sin salir de EE.UU.',
+    image: 'images/19.jpg',
+    whatsappMessage: '¡Hola! Estoy interesado(a) en el proceso de Ajuste de Estatus.'
+  },
+  {
+    icon: IdCard,
+    title: 'Residencia Legal',
+    description: 'Te guiamos en cada paso para obtener y mantener tu residencia permanente en Estados Unidos.',
+    image: 'images/20.jpg',
+    whatsappMessage: '¡Hola! Quiero saber más sobre cómo obtener la residencia legal. '
+  },
+  
 ];
 
 const Services = () => {
